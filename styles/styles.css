@@ -69,6 +69,29 @@ input[type="text"]:focus {
   box-shadow: 0 0 0 4px rgba(37,99,235,0.12);
 }
 
+.tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.tab {
+  border: 1px solid var(--border);
+  background: #f8fafc;
+  color: var(--text);
+  padding: 10px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tab.active {
+  background: var(--blue);
+  color: white;
+  border-color: var(--blue);
+}
+
 .results {
   margin-top: 14px;
   display: grid;
