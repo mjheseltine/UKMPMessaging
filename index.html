@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MP Ideology Portal</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>MP Ideology Portal</h1>
+      <p>Search for an MP to view their ideology score.</p>
+    </header>
+
+    <section class="search-card">
+      <label for="searchInput">MP Name</label>
+      <input id="searchInput" type="text" placeholder="Type a name, e.g. Rachel Reeves" />
+      <div id="results" class="results"></div>
+    </section>
+
+    <section class="profile-card" id="profileCard">
+      <h2 id="mpName">Select an MP</h2>
+      <p id="mpMeta" class="muted">Results will appear here.</p>
+
+      <div class="score-wrap">
+        <div class="score-labels">
+          <span>Left</span>
+          <span>Right</span>
+        </div>
+        <div class="score-bar">
+          <div class="score-midline"></div>
+          <div class="score-dot" id="scoreDot"></div>
+        </div>
+        <div class="score-value" id="scoreValue"></div>
+      </div>
+
+      <div class="details">
+        <div><strong>Party:</strong> <span id="partyValue">—</span></div>
+        <div><strong>Constituency:</strong> <span id="constValue">—</span></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
