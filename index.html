@@ -8,25 +8,25 @@
 </head>
 <body>
   <main class="container">
-    <header class="topbar">
-      <div class="header">
-        <h1>MP Ideology Portal</h1>
-        <p>Search MPs and view ideology scores by parliamentary session.</p>
-      </div>
-
-      <a class="download-btn" href="data/data.csv" download>
-        Download data
-      </a>
+    <header class="header">
+      <h1>MP Ideology Portal</h1>
+      <p>Search MPs and view ideology scores by parliamentary session.</p>
     </header>
 
     <section class="search-card">
       <label for="searchInput">MP Name</label>
       <input id="searchInput" type="text" placeholder="Type a name, e.g. Rachel Reeves" />
 
-      <div class="tabs" role="tablist" aria-label="Parliamentary session filters">
-        <button class="tab active" data-session="All" type="button">All</button>
-        <button class="tab" data-session="2017-2019" type="button">2017–2019</button>
-        <button class="tab" data-session="2019-2024" type="button">2019–2024</button>
+      <div class="tabs-row">
+        <div class="tabs" role="tablist" aria-label="Parliamentary session filters">
+          <button class="tab active" data-session="All" type="button">All</button>
+          <button class="tab" data-session="2017-2019" type="button">2017–2019</button>
+          <button class="tab" data-session="2019-2024" type="button">2019–2024</button>
+        </div>
+
+        <a class="download-btn" href="data/data.csv" download>
+          Download data
+        </a>
       </div>
 
       <div id="results" class="results"></div>
